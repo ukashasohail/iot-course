@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            function add(){
+                var data1=parseInt(form1.txtinput1.value);
+                var data2=parseInt(form1.txtinput2.value);
+
+                alert(data1+data2);
+            }
+            
+            function subtract(){
+                var data1=parseInt(form1.txtinput1.value);
+                var data2=parseInt(form1.txtinput2.value);
+                alert(data1-data2)
+
+            }
+
+            function multiply(){
+                var data1=parseInt(form1.txtinput1.value);
+                var data2=parseInt(form1.txtinput2.value);
+
+                alert(data1*data2)
+            }
+
+            function divide(){
+                var data1=parseInt(form1.txtinput1.value);
+                var data2=parseInt(form1.txtinput2.value);
+
+                alert(data1/data2)
+            }
+        </script>
+
+    </head>
+    <body>
+        <form name="form1">
+            <input type="text" name="txtinput1" placeholder="number1"/>
+            <input type="text" name="txtinput2" placeholder="number2"/>
+
+
+            <input type="submit" value="add" onclick="add()" />
+            <input type="submit" value="subtract" onclick="subtract()" />
+            <input type="submit" value="multiply" onclick="multiply()" />
+            <input type="submit" value="divide" onclick="divide()" />
+        </form>
+    </body>
+</html>
