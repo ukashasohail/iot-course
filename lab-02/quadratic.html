@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function f(){
+                var a=parseInt(form1.txtinput1.value);
+                var b=parseInt(form1.txtinput2.value);
+                var c=parseInt(form1.txtinput3.value);
+
+                var x;
+                x = (-b+Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+
+
+
+                alert(x);
+            }
+            
+
+        </script>
+
+    </head>
+    <body>
+        <form name="form1">
+            <input type="text" name="txtinput1" placeholder="number1"/>
+            <input type="text" name="txtinput2" placeholder="number2"/>
+            <input type="text" name="txtinput3" placeholder="number3"/>
+
+
+            <input type="submit" value="add" onclick="f()" />
+
+        </form>
+    </body>
+</html>
