@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+
+        <script>
+            function render(){
+                var gtext= form_main.txtgtext.value;
+                var ftext= form_main.txtftext.value;
+                var rtext= form_main.txtrtext.value;
+            document.write("before replacing text </br>");
+            document.write(gtext+"</br>");
+            for (i=0;i<gtext.length;i++){
+                if(gtext.slice(i,(i+ftext.length))===ftext){
+                    gtext=gtext.slice(0,i)+rtext+gtext.slice(i+ftext.length);
+                }
+            }
+            document.write("after replacing text</br>");
+            document.write(gtext);
+            }
+            
+
+        </script>
+
+        <form name="form_main">
+            <input type="text" name="txtgtext"/>
+            <input type="text" name="txtftext"/>
+            <input type="text" name="txtrtext"/>
+            <input type="submit" value="submit" onclick="render()"/>
+        </form>
+    </body>
+</html>
