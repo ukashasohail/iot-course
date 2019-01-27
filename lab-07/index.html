@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+        .button {
+  background-color: #192A56;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        </style>
+
+    </head>
+    <body>
+
+
+ 
+        <script>
+            function get_time() {
+                var  now = new Date;
+                var hr = now.getHours();
+                var min = now.getMinutes();
+                alert("time:"+hr+":"+min);
+            }
+
+            function get_info(firstname,lastname){
+                alert("Full name is: "+firstname + " " + lastname);
+            }
+
+            var firstname=prompt("Enter first name");
+            var lastname=prompt("enter last name");
+
+            get_info(firstname,lastname);
+        </script>
+        <button class="button" onclick="get_time()">PRESS TO GET TIME</button>
+    </body>
+</html>
