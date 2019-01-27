@@ -9,3 +9,7 @@ console.log(y);
 console.log(currentDate.getHours());
 console.log(currentDate.getMinutes());
 
+// function
+// asynchronous and synchronous function
+
+//
