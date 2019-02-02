@@ -17,3 +17,12 @@ var z = x.slice(2); // will run from 2nd index to end
 
 console.log(y,z);
 console.log(x.length); // return the length of string
+
+//ch23
+
+var foo = "MessiIsTheBest";
+console.log(foo.indexOf("Is")); // return the index of first character
+
+//ch24
+
+console.log(foo.charAt(5));
