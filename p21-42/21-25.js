@@ -26,3 +26,13 @@ console.log(foo.indexOf("Is")); // return the index of first character
 //ch24
 
 console.log(foo.charAt(5));
+
+//ch25
+
+var foo1 ="Ronaldo is the best Ronaldo Ronaldo Ronaldo";
+
+var foo2 = foo1.replace("Ronaldo","Messi"); //replace only first instance
+var foo3 = foo1.replace(/Ronaldo/g, "Messi"); // replace all instances
+
+console.log(foo2);
+console.log(foo3);
